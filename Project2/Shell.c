@@ -74,7 +74,6 @@ void mainWhile(FILE* stream) {
         // if return is pressed with no input, continue
         if (line[0] == '\n') continue;
         if (line) {
-            printf("tokenizing line\n");
             // tokenize line
             args = tokenizeLine(line);
             // change directory command
@@ -88,7 +87,6 @@ void mainWhile(FILE* stream) {
             } else if (!strcmp(args[0], "path")) {
                 free(pathList);
                 pathList = setPath(args);
-                printf("pathList after calling setPath:\n");
             } else if (!strcmp(args[0], "print")) {
                 size_t i = 0;
                 while (pathList[i]) {
