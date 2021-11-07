@@ -81,7 +81,7 @@ int main(void) {
     counter_t* c = malloc(sizeof(counter_t));
     init(c, 102400);
     struct timeval init, fin;
-    pthread_t threads[4]; 
+    pthread_t threads[8]; 
     size_t threadNum = 8;
     int rc;
     char* count[] = { "one thread", "two threads", "three threads", "four threads", "five threads",
