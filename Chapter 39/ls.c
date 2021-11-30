@@ -1,3 +1,7 @@
+/* implementation of the UNIX utility ls
+// user may provide optional "-l" flag for detailed information of files in directory
+// if no directory is supplied by user, present working directory is used */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
