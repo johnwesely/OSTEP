@@ -32,7 +32,7 @@ int main(int argc, char* argv[]) {
     }
     name_buff[buff_index] = 0;
 
-    // convert file type and mode string 
+    // convert file type and mode to string for printing
     int m = s.st_mode;
     char mode_buff[11] = { 0 };
     size_t m_i = 0;
